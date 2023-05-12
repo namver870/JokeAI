@@ -3,7 +3,7 @@ import random
 import openai
 
 # Set up OpenAI API credentials
-openai.api_key = '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'
+openai.api_key = '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'
 
 class JokeApp:
     def __init__(self, root):
@@ -21,8 +21,8 @@ class JokeApp:
 
     def tell_joke(self):
         prompt = self.entry.get()
-        if self.entry.get() == '':
-            prompt = "give me a random joke"
+       # if self.entry.get() == '':
+            #prompt = "give me a random joke"
         joke = self.generate_joke(prompt)
         self.display_joke(joke)
 
